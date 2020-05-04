@@ -31,7 +31,12 @@ pipeline{
       
    }
 }
+stage ('mail') {
+    steps {
+       mail bcc: '', body: 'jenkins job success ', cc: '', from: '', replyTo: '', subject: 'jenkinsjob', to: 'theetisatish@gmail.com'
+    }
 
+    }
 }
     
 }
